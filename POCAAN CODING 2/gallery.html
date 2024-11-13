@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #76c6bf, #8795ac);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+       
+header {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.logo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 20px;
+}
+
+.nav-items a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.nav-items a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #76c6bf;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-items li {
+        margin: 0 10px;
+    }
+}
+
+
+        .row > .column {
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a background color */
+            transition: background-color 0.3s;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .gallery {
+            margin-top: 70px;
+            padding: 5rem 9% 5rem; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BINI</div>
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="BINI.html">Profiles</a></li>
+                <li><a href="about BINI.html">Music Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="background.html">Background</a></li>
+                <li><a href="https://pocaan3321.wixsite.com/bini-merch-1" target="_blank">Shop</a></li>
+                <li><a href="https://sites.google.com/view/bini-articles/home">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <div class="row">
+            <div class="column">
+                <img src="IMAGES/ot8(4).jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(3).jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/bini ot8(1).jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(2).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(5).jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(6).jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(8).jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/cherry on top.webp" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(9).jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(16).jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(12).jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(13).jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="IMAGES/ot8(17).jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+            </div>
+        </div>
+    </section>

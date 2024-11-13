@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BINI</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #76c6bf, #8795ac);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        header {
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-items {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-items li {
+            margin: 0 20px;
+        }
+
+        .nav-items a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            transition: color 0.3s, background 0.3s;
+        }
+
+        .nav-items a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #76c6bf;
+            border-radius: 5px;
+        }
+
+        .content {
+            margin-top: 150px; 
+            font-size: 130%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap; 
+            margin-top: 20px; 
+            justify-content: center; 
+            padding: 0 5%; 
+        }
+
+        .column {
+            flex: 0 0 25%; 
+            padding: 8px; 
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 0 0 50%; 
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                flex: 0 0 100%; 
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s; 
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+        .container {
+            padding: 16px; 
+            text-align: center; 
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            background-color: transparent; 
+            text-align: center;
+            cursor: pointer;
+            width: 70%; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            font-size: 120%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        img {
+            width: 100%; 
+            height: auto; 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BINI</div>
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="BINI.html">Profiles</a></li>
+                <li><a href="about BINI.html">Music Videos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="background.html">Background</a></li>
+                <li><a href="https://pocaan3321.wixsite.com/bini-merch-1" target="_blank">Shop</a></li>
+                <li><a href="https://sites.google.com/view/bini-articles/home">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini-about-cot-gwen.webp" alt="BINI GWEN">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI GWEN</h2>
+                        <p class="title" style="color: white;">Full name: Gweneth L. Apuli</p>
+                        <p>Date of birth: June 19, 2003</p>
+                        <p><a href="https://www.instagram.com/bini_gwen?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini colet.webp" alt="BINI COLET">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI COLET</h2>
+                        <p class="title" style="color: white;">Full name: Ma. Nicolette Vergara</p>
+                        <p>Date of birth: September 14, 2001</p>
+                        <p><a href="https://www.instagram.com/bini_colet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/aiah cot.jpg" alt="Aiah Arceta">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI AIAH</h2>
+                        <p class="title" style="color: white;">Full name: Mariah Queen Arceta</p>
+                        <p>Date of birth: January 27, 2001</p>
+                        <p><a href="https://www.instagram.com/bini_aiah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini-about-cot-mikha.webp" alt="BINI MIKHA">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI MIKHA</h2>
+                        <p class="title" style="color: white;">Full name: Mikhaela Janna Lim</p>
+                        <p>Date of birth: November 8, 2003</p>
+                        <p><a href="https://www.instagram.com/bini_mikha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini-about-cot-jhoanna.webp" alt="BINI JHO">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI JHOANNA</h2>
+                        <p class="title" style="color: white;">Full name: Jhoanna Christine Robles</p>
+                        <p>Date of birth: January 26, 2004</p>
+                        <p><a href="https://www.instagram.com/bini_jhoanna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini maloi.webp" alt="BINI MALOI">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI MALOI</h2>
+                        <p class="title" style="color: white;">Full name: Mary Loi Yves K. Ricalde</p>
+                        <p>Date of birth: May 27, 2002</p>
+                        <p><a href="https://www.instagram.com/bini_maloi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini-about-cot-sheena.webp" alt="BINI SHEENA">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI SHEENA</h2>
+                        <p class="title" style="color: white;">Full name: Sheena Mae Catacutan</p>
+                        <p>Date of birth: May 9, 2004</p>
+                        <p><a href="https://www.instagram.com/bini_sheena?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/bini-about-cot-stacey.webp" alt="BINI STACEY">
+                    <div class="container">
+                        <h2 style="color: teal;">BINI STACEY</h2>
+                        <p class="title" style="color: white;">Full name: Lindstey Stacey Aubrey Sevilleja</p>
+                        <p>Date of birth: July 13, 2003</p>
+                        <p><a href="https://www.instagram.com/bini_stacey/?utm_source=ig_web_button_share_sheet" class="button">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
